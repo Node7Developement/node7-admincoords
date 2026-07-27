@@ -1,0 +1,14 @@
+$engine: 3
+$onesync: on
+name: NODE7 Admin Coordinates
+author: NODE7 Development Studios
+description: ACE-protected coordinate copier using NODE7 Menu Base v2.1.0 direct exports.
+tasks:
+  - action: ensure_dir
+    path: ./resources/[node7-development]
+  - action: download_github
+    src: https://github.com/Node7-Development-Studios/node7-admincoords
+    ref: main
+    dest: ./resources/[node7-development]/node7-admincoords
+  - action: waste_time
+    seconds: 1
